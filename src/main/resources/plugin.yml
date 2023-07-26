@@ -1,0 +1,11 @@
+#file: noinspection YAMLSchemaValidation
+name: ms-boss
+version: '${project.version}'
+main: pt.dioguin.boss.BossPlugin
+softdepend: [Multiverse-Core]
+authors: [yDioguin_, ReeachyZ_]
+description: https://minecraft-solutions.com
+commands:
+  boss:
+  killer:
+    aliases: [matadora]

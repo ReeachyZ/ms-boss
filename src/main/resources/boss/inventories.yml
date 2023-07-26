@@ -1,0 +1,132 @@
+boss-general:
+  size: 54
+  title: "Boss"
+  layout:
+    - "PPPPPPPPP"
+    - "PPPOOOOOP"
+    - "PPPOOOOOP"
+    - "PPPOOOOOP"
+    - "PPPOOOOOP"
+    - "PPPPPPPPP"
+  information:
+    slot: 10
+    skull: "http://textures.minecraft.net/texture/d65d5f2eb0ada6243e46cd10bf6016a85bc1b1fc0a34ee7a9f8b5b174a449d"
+    name: "&bInformações"
+    lore:
+      - "&7Aqui se encontram todos os"
+      - "&7bosses existentes e as suas"
+      - "&7recompensas, respetivamente."
+      - ""
+      - "&7Para ter acesso a bosses"
+      - "&7melhores, você precisa"
+      - "&7subir de nível."
+      - ""
+      - "&fNível atual: &7%user_level%"
+      - "%progress-bar%"
+      - ""
+      - "&7Evolua seu nível matando"
+      - "&7todos os bosses que tiver!"
+  ranking:
+    slot: 19
+    skull: "http://textures.minecraft.net/texture/1f178a3e7058a13aac50d1929a54d484dbdffc0385324c19b18dfe3441b4c79e"
+    name: "&bTOP Boss"
+    lore:
+      - "&7Clique aqui para visualizar"
+      - "&7os jogadores que mais"
+      - "&7bosses mataram."
+  rewards:
+    name: "%boss-name%"
+    lore:
+      - "&fVida: &4❤%boss-health%"
+      - "&fNível necessário: &7%level%"
+      - ""
+      - "&7Clique para visualizar"
+      - "&7as recompensas."
+
+boss-killer:
+  size: 45
+  title: "Matadora de Bosses"
+  layout:
+    - "PPPPPPPPP"
+    - "PPPPHIDPP"
+    - "PPPPPPPPP"
+    - "PPOOOOOPP"
+    - "PPPPPPPPP"
+  hit-kill:
+    name: "&cHit-Kill"
+    lore:
+      - "&7Mate os bosses com"
+      - "&7apenas um hit."
+      - ""
+      - "&7Adquira-o acessando a loja:"
+      - "&fminecraft-solutions.com"
+  indestructible:
+    name: "&cIndestrutível"
+    lore:
+      - "&7Não perca a durabilidade"
+      - "&7de sua matadora ao matar"
+      - "&7um boss nunca mais."
+      - ""
+      - "&7Adquira-o acessando a loja:"
+      - "&fminecraft-solutions.com"
+  doubleexperience:
+    name: "§cExperiência Dupla"
+    lore:
+      - "&7Receba o dobro de experiência"
+      - "&7ao matar um boss."
+      - ""
+      - "&7Adquira-o acessando a loja:"
+      - "&fminecraft-solutions.com"
+  player-xp:
+    addlore:
+      - ""
+      - " &8● &fVocê possui: &b%xp% XP"
+  repair:
+    name: "&aReparar"
+    lore:
+      - "&7Clique aqui para"
+      - "&7reparar a sua matadora."
+      - ""
+      - "&8● &fCusto: &b%repair-cost% XP"
+
+  # status placeholder
+  status0: "&aClique para encantar!"
+  status0-color: "&a"
+  status1: "&cExperiência insuficiente."
+  status1-color: "&c"
+  status2: "&cNível máximo atingido."
+  status2-color: "&c"
+  enchant:
+    name: "%color%%enchant-name% &8- &f%current-level% → %next-level%"
+    addlore:
+      - ""
+      - " &8● &fNível máximo: &7%max-level%"
+      - ""
+      - " &fPreço: &b%price% XP"
+      - ""
+      - "%status%" #status cujo valor retornado é a placeholder em cima
+
+reward:
+  size: 45
+  title: "Recompensas"
+  layout:
+    - "PPPPPPPPP"
+    - "PPOOOOOPP"
+    - "PPOOOOOPP"
+    - "PPOOOOOPP"
+    - "<PPPPPPP>"
+  next-page: "&aPágina seguinte"
+  previous-page: "&cPágina anterior"
+
+top:
+  size: 36
+  title: "Boss - TOP"
+  layout:
+    - "PPPPPPPPP"
+    - "POOOOOOOP"
+    - "PPPOOOPPP"
+    - "PPPPPPPPP"
+  nobody: "&cNinguém"
+  item:
+    name: "&f%position%º &e%player_name%"
+    lore: "&7Bosses mortos: &f%killed-bosses%"

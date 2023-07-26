@@ -1,0 +1,63 @@
+boss:
+  COAL_ORE:
+    name: "&8Carvão"
+    maxHealth: 200.0
+    level: 1 #level para spawnar este boss
+    requirement-next: 100 #quantidade de bosses que precisam para upar de level
+    xp: 100.0 #xp por boss
+    rewards:
+      1:
+        display:
+          material: "DIAMOND_BLOCK"
+          data: 0
+          name: "&bDiamante"
+          lore:
+            - "&7grande bloco de diamante"
+          glow: true
+        use-command: false
+        use-item: true
+        item:
+          material: "DIAMOND_BLOCK"
+          data: 0
+          amount: 8
+          name: "&bDiamante"
+          lore:
+            - "&7grande bloco de diamante"
+          glow: true
+        chance: 0.5
+      2:
+        use-command: false
+        use-item: true
+        display:
+          material: "EMERALD_BLOCK"
+          data: 0
+          name: "&aEsmeralda"
+          lore:
+            - "&7grande bloco de esmeralda"
+        item:
+          material: "EMERALD_BLOCK"
+          data: 0
+          amount: 8
+          name: "&aEsmeralda"
+          lore:
+            - "&7grande bloco de esmeralda"
+          enchants:
+            - "DAMAGE_ALL:10"
+        chance: 0.1
+  REDSTONE_ORE:
+    name: "&4Redstone"
+    maxHealth: 200.0
+    level: 2 #level para spawnar este boss
+    xp: 150.0 #xp por boss
+    rewards:
+      1:
+        use-command: true
+        use-item: false
+        command: "give {player} diamond_block 64"
+        chance: 1.0
+        display:
+          material: "DIAMOND_BLOCK"
+          data: 0
+          name: "&bDiamante"
+          lore:
+            - "&7simples bloco de diamante"

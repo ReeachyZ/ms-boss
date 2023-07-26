@@ -1,0 +1,33 @@
+# Dependências: Multiverse-Core (Opcional), InventoryFramework e ProtocolLib
+license: "INSIRA_SUA_LICENCA_AQUI"
+
+MySQL:
+  use: false # se false, vai usar SQLite
+  host: "localhost"
+  database: "rankupdb"
+  username: "root"
+  password: "test"
+  port: 3306
+
+repair-cost: 200 #quantidade de XP que é necessária para reparar a matadora
+durability-per-hit: 50 #durabilidade a ser retirada na matadora a cada hit
+
+boss-summoner-item:
+  name: "&bInvocador de Bosses"
+  lore:
+    - "&7Invoque um boss de acordo"
+    - "&7com o seu nível atual."
+    - ""
+    - "&bColoque no chão."
+
+boss-killer-item:
+  name: "&bMatadora &7[0]"
+  lore:
+    - ""
+    - "&7Utilize este item para"
+    - "&7aniquilar os bosses mais"
+    - "&7fortes deste servidor."
+    - ""
+
+boss-killer-item-on-update:
+  name: "&bMatadora &7[%dead_bosses%]" # ao matar 1 boss, o nome é atualizado para o inserido aqui

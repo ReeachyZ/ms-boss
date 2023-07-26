@@ -1,0 +1,74 @@
+book:
+  name: "&b%enchant-name% &8» &fNível %level%"
+  lore:
+    - "&7Utilize este item para"
+    - "&7encantar a sua matadora."
+    - ""
+    - "&fArraste em uma matadora."
+
+damage: #se a matadora tiver 100 de dano, o dano aplicado será 100 + default-damage (inserido em boss/config.yml)
+  name: "Dano"
+  price: 100.0 # este número multiplica pelo level do encantamento
+  maxLevel: -1 #-1 para infinito
+  description:
+    - "&7Ao bater em um boss"
+    - "&7o dano dado será maior."
+
+durability: #ao hitar, dá x de durabilidade. x = level do encantamento
+  name: "Durabilidade"
+  price: 100.0 # este número multiplica pelo level do encantamento
+  maxLevel: -1
+  description:
+    - "&7Ao bater em um boss"
+    - "&7a perca de durabilidade"
+    - "&7será menor."
+
+experience: #mais XP ao matar um boss
+  name: "Experiência"
+  multiplier: 1 #ao matar, o XP dado é default-xp + level * número inserido
+  price: 100.0 # este número multiplica pelo level do encantamento
+  maxLevel: -1
+  description:
+    - "&7Ganhe mais experiência"
+    - "&7ao abater bosses."
+
+critical: #quando aplicado, é dado mais dano
+  name: "Crítico"
+  multiplier: 2 #quando aplicado, multiplica o dano pelo número inserido
+  chance: 1000 #é gerado 1 número de 0 a 1, e se esse número for menor ou igual que o level de critical dividido pelo número inserido, então é executado o critical. Ou seja, quanto maior for o level, + chance de aplicar, e quanto maior for o número inserido, - chance de aplicar
+  price: 100.0 # este número multiplica pelo level do encantamento
+  maxLevel: -1
+  description:
+    - "&7Tenha chance de dar"
+    - "&7o dobro de dano a"
+    - "&7um boss."
+
+funeral: #quando aplicado, mata o boss de uma vez
+  name: "Funeral"
+  chance: 10000 #é gerado 1 número de 0 a 1, e se esse número for menor ou igual que o level de funeral dividido pelo número inserido, então é executado o funeral. Ou seja, quanto maior for o level, + chance de aplicar, e quanto maior for o número inserido, - chance de aplicar
+  price: 100.0 # este número multiplica pelo level do encantamento
+  maxLevel: -1
+  description:
+    - "&7Tenha chance de"
+    - "&7abater o seu boss"
+    - "&7de uma vez."
+
+hitkill: #mata sempre o boss de uma vez
+  name: "Hit-Kill"
+  description:
+    - "&7Mate os bosses com"
+    - "&7apenas um hit."
+
+indestructible: #durabilidade infinita
+  name: "Indestrutível"
+  description:
+    - "&7Não perca a durabilidade"
+    - "&7de sua matadora ao matar"
+    - "&7um boss nunca mais."
+
+doubleexperience: #mais XP ao matar um boss
+  name: "Experiência Dupla"
+  multiplier: 2 #multiplica o XP pelo número inserido
+  description:
+    - "&7Receba o dobro de experiência"
+    - "&7ao matar um boss."
